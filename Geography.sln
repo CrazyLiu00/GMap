@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geography", "Geography.csproj", "{408EC6E8-0865-462D-B2E6-7CD679F3CD1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geography.Editor", "Geography.Editor.csproj", "{D1AD1CC9-3A8F-4407-4F47-DE2DAA56EEDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{408EC6E8-0865-462D-B2E6-7CD679F3CD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408EC6E8-0865-462D-B2E6-7CD679F3CD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408EC6E8-0865-462D-B2E6-7CD679F3CD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408EC6E8-0865-462D-B2E6-7CD679F3CD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AD1CC9-3A8F-4407-4F47-DE2DAA56EEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AD1CC9-3A8F-4407-4F47-DE2DAA56EEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AD1CC9-3A8F-4407-4F47-DE2DAA56EEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AD1CC9-3A8F-4407-4F47-DE2DAA56EEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

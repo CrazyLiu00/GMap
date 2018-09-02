@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{408EC6E8-0865-462D-B2E6-7CD679F3CD1F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp.dll</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>5.3.6f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_6;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_6;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>F:/unity5.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:/unity5.3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>F:/unity5.3/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>Assets/Plugins/I18N.CJK.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>Assets/Plugins/I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets/Plugins/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>Assets/Plugins/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets/Plugins/System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Alt.GUI">
+      <HintPath>Assets/ThirdParty/AltGUI/_Integration/_bin/Alt.GUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Alt.GUI.Ext">
+      <HintPath>Assets/ThirdParty/AltGUI/_Integration/_bin/Alt.GUI.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Alt.GUI.Ext.LGPL">
+      <HintPath>Assets/ThirdParty/AltGUI/_Integration/_bin/Alt.GUI.Ext.LGPL.dll</HintPath>
+    </Reference>
+    <Reference Include="Alt.Sketch">
+      <HintPath>Assets/ThirdParty/AltGUI/_Integration/_bin/Alt.Sketch.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>F:/unity5.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>F:/unity5.3/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>F:/unity5.3/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Script\Core\Event\GameEvent.cs" />
+    <Compile Include="Assets\Script\Core\MapEnum.cs" />
+    <Compile Include="Assets\Script\Core\MapInfo.cs" />
+    <Compile Include="Assets\Script\Core\MapPaintChange.cs" />
+    <Compile Include="Assets\Script\Core\MapTools.cs" />
+    <Compile Include="Assets\Script\Core\NormalTools.cs" />
+    <Compile Include="Assets\Script\Core\SqliteLoadImage.cs" />
+    <Compile Include="Assets\Script\Core\System\MapEventSystem.cs" />
+    <Compile Include="Assets\Script\Core\System\MapNormalSystem.cs" />
+    <Compile Include="Assets\Script\Core\Win32MessageBox.cs" />
+    <Compile Include="Assets\Script\CoreUI\BaseHandleUILogic.cs" />
+    <Compile Include="Assets\Script\CoreUI\MapDataItem.cs" />
+    <Compile Include="Assets\Script\CoreUI\MapDataUILogic.cs" />
+    <Compile Include="Assets\Script\CoreUI\ToolsUILogic.cs" />
+    <Compile Include="Assets\Script\Test\GMapTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_Box2D.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_FarseerPhysics.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_HtmlRenderer.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_ICSharpCodeTextEditor.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_NPlot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_OxyPlot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\AltGUIHelper\AltGUIHelper_SVG.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUI3DPieChartDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIAForgeFilteredPictureBoxDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIAwesomiumDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIBox2DDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIControlHostDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIControlHostDemo_Control.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIFarseerPhysicsDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIGMapDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIGwenComplexDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIHtmlLabelDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIHtmlPanelDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIICSharpCodeTextEditorDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUINPlotDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIOxyPlotDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIOxyPlotMapDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIPictureBoxDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIQuickFontDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIRichTextBoxDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUISvgDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltGUIZedGraphDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\AltSketchPaintDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Core\Example_AForge_ParallelTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Example_AForge_Multi.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Fuzzy\Example_AForge_FuzzyAGV.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Fuzzy\Example_AForge_FuzzySetSample.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Genetic\TSP\Example_AForge_Genetic_TSP.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Genetic\TSP\TSPChromosome.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Genetic\TSP\TSPFitnessFunction.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Imagine\BlobsExplorer\BlobsBrowser.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Imagine\BlobsExplorer\Example_AForge_BlobsExplorer.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Imagine\Example_AForge_FiltersDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Imagine\Example_AForge_ShapeChecker.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Imagine\Example_AForge_TexturesDemo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\MachineLearning\CellWorld.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\MachineLearning\Example_AForge_Animat.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Neuro\SOM\Example_AForge_2DOrganizing.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Neuro\SOM\Example_AForge_Color.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AForge\Neuro\SOM\Example_AForge_Neuro_SOM_TSP.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltGUIGwenComplexDemoControl.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\AltNETType Simple Font\ANTExt.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\AltNETType Simple Font\SimpleFont.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\AltNETType Simple Font\SimpleFontCacheManager.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Atlas\ANTBitmapChar.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Atlas\ANTBitmapFont.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Atlas\Example_AltNETType_FontAtlas.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Atlas\FontAtlas.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Atlas\TreeNode.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Example_AltNETType_Base.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Example_AltNETType_FreeType2_Step1.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Example_AltNETType_FreeType2_Step2_Advanced.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Example_AltNETType_FreeType2_Step2_Simple.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Example_AltNETType_Outline_Transformations.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\AltNETType\Example_AltNETType_SimpleFontCacheManager.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Awesomium\Awesomium.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Awesomium\Example_Awesomium.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GMap\Example_GMap.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GMap\Example_GMap_BigMapMaker.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GMap\Example_GMap_BigMapMaker_NotAvailable.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GMap\Example_GMap_NotAvailable.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GMap\Example_GMap_UI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Example_GifInPictureBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Example_QuickFont.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\Example_Gwen_UnitTest_Simple.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\Example_Gwen_UnitTest_Skin.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\Button.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\CheckBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\CollapsibleList.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\ColorPickers.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\ComboBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\CrossSplitter.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\Docking.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\GUnit.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\GroupBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\ImagePanel.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\Label.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\ListBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\MenuStrip.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\NumericUpDown.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\ProgressBar.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\Properties.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\RadioButton.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\RichLabel.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\ScrollControl.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\Slider.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\StatusBar.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\TabControl.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\TextBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\TreeControl.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\UnitTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\Window.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\GUI\Gwen\UnitTest\_AltSketch\PictureBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Example_Box2D.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Framework\Settings.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Framework\Test.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Framework\TestEntries.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Framework\TestEntry.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\ApplyForce.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\BodyTypes.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Breakable.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Bridge.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Cantilever.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Chain.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\CharacterCollision.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\CollisionFiltering.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\CollisionProcessing.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\CompoundShapes.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Confined.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\ContinuousTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\DistanceTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Dominos.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\DynamicTreeTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Edge.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\EdgeShapes.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Gears.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\LineJoin.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\OneSidedPlatform.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\PolyCollision.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\PolyShapes.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Prismatic.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Pulleys.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Pyramid.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Raycast.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Revolute.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\SensorTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\ShapeEditing.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\SliderCrank.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\SphereStack.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\TheoJansen.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Tiles.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\TimeOfImpact.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\VaryingFriction.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\VaryingRestitution.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\VerticalStack.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Box2D\Tests\Web.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Example_FarseerPhysics.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Framework\GameSettings.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Framework\Test.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Framework\TestEntries.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Framework\TestEntry.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\AddPairTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\AngleJointTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ApplyForceTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\BodyTypesTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\BreakableTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\BridgeTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\BulletTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\BuoyancyTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CantileverTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CarTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ChainTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CharacterCollisionTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CheckPolygonTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CircleBenchmarkTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CirclePenetrationTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CloneTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CollisionFilteringTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CollisionProcessingTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CompoundShapesTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ConfinedTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ContinuousTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ConvexHullTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ConvexHullTest2.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ConveyorBeltTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\CuttingTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\DeletionTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\DestructibleTerrainTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\DistanceTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\DominosTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\DynamicTreeTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\EdgeShapeBenchmarkTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\EdgeShapesTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\EdgeTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ExplosionTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\GearsTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\GravityControllerTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\LockTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\MobileBalancedTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\MobileTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\MotorJointTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\OneSidedPlatformTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PathTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PinballTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PolyCollisionTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PolyShapesTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PrismaticTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PulleysTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\PyramidTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\RaycastTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\RevoluteTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\RopeTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\RoundedRectangle.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\SensorTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\ShapeEditingTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\SimpleWindForceTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\SimplificationTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\SliderCrankTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\SphereStackTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\TextureVerticesTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\TheoJansenTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\TilesTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\TimeOfImpactTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\TriangulationTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\TumblerTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\VaryingFrictionTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\VaryingRestitutionTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\VerticalStackTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\WebTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\FarseerPhysics\Tests\YuPengPolygonTest.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Game Physics\Rand.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_AffineTransformer.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_BSpline.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_Bilinear_Perspective.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_CombinedGeometry.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_Contour.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_Outline_SVG.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\Example_TextOutline.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\LensEffect\Example_LensEffectSVG.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\LensEffect\WarpMagnifierTransform.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\PolarTransform\Example_PolarTransform.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\PolarTransform\PolarTransform.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SimpleSVG\Core\SVGException.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SimpleSVG\Core\SVGParser.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SimpleSVG\Core\SVGPath.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SimpleSVG\Core\SVGPathTokenizer.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SimpleSVG\Example_SimpleSVG.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SinTransform\Example_SinTransform.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\SinTransform\SinTransform.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\VectorText PathTransform\Example_VectorText_TransformedCurve1.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\VectorText PathTransform\Example_VectorText_TransformedCurve2.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Geometry\VectorText PathTransform\VectorText_TransformedCurve_Base.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Graphics\Clipper\Example_Clipper.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Graphics\Clipper\SVGBuilder.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Graphics\Example_ExtBrush.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Graphics\Example_SVG.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\HtmlRenderer\Example_HtmlRenderer_Base.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\HtmlRenderer\Example_HtmlRenderer_Multi.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\HtmlRenderer\Example_HtmlRenderer_RenderToBitmap.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\HtmlRenderer\Resources\_Resources.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\HtmlRenderer\SampleForm.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Annotations.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Booklet.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Bookmarks.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_ColorsCMYK.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_CombineDocuments.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_ConcatenateDocuments.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_ExportImages.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\Base.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\Example_Graphics.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\Images.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\LinesAndCurves.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\Paths.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\Shapes.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Graphics\Text.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_HelloWorld.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_PDFGenerator_Base.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_PageSizes.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_PdfSharp_Multi.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Preview.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_ProtectDocument.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_SplitDocument.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_TextLayout.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_TwoPagesOnOne.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Unicode.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_UnprotectDocument.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_Watermark.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_WorkOnPdfObjects.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\PdfSharp\Example_XForms.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\Example_PieChart.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\Example_ZedGraph_Multi.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\NPlot\Example_NPlot_Multi.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\NPlot\Examples\Example_NPlot_AxisTests.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\NPlot\Examples\Example_NPlot_Bitmap.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\NPlot\Examples\Example_NPlot_MultiPlot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\NPlot\Examples\Example_NPlot_Tour.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\NPlot\NPlotBitmap.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Example_OxyPlot_Multi.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Example_OxyPlot_Multi_ViewModel.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Attributes\ExampleAttribute.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Attributes\ExamplesAttribute.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\CustomSeries\ErrorItem.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\CustomSeries\ErrorSeries.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\CustomSeries\FlagSeries.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\CustomSeries\LineSegmentSeries.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\CustomSeries\MatrixSeries.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\ExampleInfo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\AnnotationExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\AreaSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\AxisExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\BarAndColumnSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\BarSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\ColumnSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\ErrorColumnSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\IntervalBarSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\RectangleBarSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BarSeries\TornadoBarSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\BoxPlotSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\CartesianAxesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\CategoryAxisExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\ClosedIssues.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\ContourSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\CustomSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\DateTimeAxisExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\DiscreteDataSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\ExamplesBase.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\FilteringExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\FinancialSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\FunctionSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\HeatMapSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\ItemsSourceExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\LegendExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\LineSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\LinearAxisExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\LogarithmicAxisExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\MiscExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\MouseEventExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\OpenIssues.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\PerformanceExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\PieSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\PolarPlotExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\ScatterSeriesExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\ShowMeTheNumbersExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\TimeSpanAxisExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Examples\TrackerExamples.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\Examples\Helpers\Sun.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\_AltSketch\GraphicsRenderContext.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\_AltSketch\Helpers\ConverterExtensions.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\_AltSketch\NamespaceDoc.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\_AltSketch\PngExporter.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Plot\OxyPlot\_Gwen\Gwen.Control.OxyPlot.Plot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Common.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Example_NotAvailable.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Example_NotAvailable_ScreenShot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Example__Base.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\ExamplesHolder.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Geometry\GeometryAuxWeight.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Geometry\Geometry_Arrows.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Geometry\Geometry_GreatBritain.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\Geometry\Geometry_Spiral.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\_Common\InteractiveGeometryContainer.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\Common\Scenes\AltGUI_Native_Demo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUI3DPieChart.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIAForgeFilteredPictureBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIAwesomium.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIBox2D.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIControlHost.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIControlHost_Input.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIFarseerPhysics.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIGMap.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIHtmlLabel.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIHtmlPanel.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIICSharpCodeTextEditor.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUINPlot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIOxyPlot.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIPictureBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIQuickFont.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIRichTextBox.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUISvg.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltGUIZedGraph.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\AltSketchPaint.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\ComingSoon\AltOSHost.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\ComingSoon\AltOSView.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUI3DPieChartDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIAForgeFilteredPictureBoxDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIAwesomiumDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIBox2DDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIControlHostDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIFarseerPhysicsDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIGMapDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIGwenComplexDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIHtmlLabelDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIHtmlPanelDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIICSharpCodeTextEditorDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUINPlotDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIOxyPlotDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIOxyPlotMapDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIPictureBoxDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIQuickFontDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIRichTextBoxDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUISvgDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltGUIZedGraphDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Examples\AltSketchPaintDemo_UnityUI.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\Scenes\AltGUI_UnityUI_Demo.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\UnityUI\SetPropertyUtility.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\AltGUIIntegration\AltGUIIntegration.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\AltGUIIntegration\AltGUIIntegration_Unity.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\AltGUIMonoBehaviour.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\AltGUIScreenMonoBehaviour.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\AltSketchPaintHandler.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\BrushMaterials\Unity_ExtBrushMaterial.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\BrushMaterials\Unity_ImageBrushMaterial.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\BrushMaterials\Unity_LinearGradientBrushMaterial.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\BrushMaterials\Unity_RadialGradientBrushMaterial.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\BrushMaterials\Unity_SolidColorBrushMaterial.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\Unity_RenderManager.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\Unity_RenderPrimitive.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\Unity_Renderer.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Backend\Unity_Texture.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\Events.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\PCLTools\PCLThread.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\PCLTools\PCLTools.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\PCLTools\PCLTools_Convert.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\UnityHelper\UnityHelper_Convert.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\UnityHelper\UnityHelper_Input.cs" />
+    <Compile Include="Assets\ThirdParty\AltGUI\_Integration\UnityHelper\UnityHelper_Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ThirdParty\AltGUI\Common\Examples\Gwen Complex Demo\Awesomium\README.txt" />
+    <None Include="Assets\ThirdParty\AltGUI\README.txt" />
+    <None Include="Assets\ThirdParty\AltGUI\_Integration\_bin\Alt.GUI.Ext.LGPL.XML" />
+    <None Include="Assets\ThirdParty\AltGUI\_Integration\_bin\Alt.GUI.Ext.XML" />
+    <None Include="Assets\ThirdParty\AltGUI\_Integration\_bin\Alt.GUI.XML" />
+    <None Include="Assets\ThirdParty\AltGUI\_Integration\_bin\Alt.Sketch.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
